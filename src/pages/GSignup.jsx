@@ -12,7 +12,8 @@ const SCHOOL_OPTIONS = [
 
 
 export default function GSignup() {
-    const email = useSearchParams().get('email')
+    const [searchParams] = useSearchParams();
+    const email = searchParams.get('email');
     
 
   const navigate = useNavigate();
